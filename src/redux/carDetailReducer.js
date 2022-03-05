@@ -1,12 +1,18 @@
-const defaultState = { name: 'Name default', img: 'https://picsum.photos/200' };
+
+const defaultState = {name:'name default', img:'https://picsum.photos/200'}
+
+
 
 export const carDetailReducer = (state = defaultState, action) => {
-  switch (action.type) {
-    case 'XEM_CHI_TIET': {
-      state = action.carDetail;
-      return { ...state };
+    // console.log('action',action)
+    
+    switch(action.type) {
+        case 'XEM_CHI_TIET': {
+
+            state = action.carDetail;
+            return {...state}; //immutable 
+        }
+        default : return state;
     }
-    default:
-      return state;
-  }
-};
+    // return state;
+}

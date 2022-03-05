@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class CarItem extends Component {
   render() {
-    let { prod } = this.props;
+      let {item} = this.props;
     return (
-      <div>
-        <div className='card'>
-          <img src={prod.img} alt='...' />
+      <div className='card'>
+          <img src={item.img} alt="..." />
           <div className='card-body'>
-            <h3>{prod.name}</h3>
-            <p>{prod.price}</p>
-            <button
-              className='btn btn-primary'
-              data-toggle='modal'
-              data-target='#modelId'
-              onClick={() => {
-                this.props.renderSetState(prod);
-              }}
-            >
-              Xem chi tiết
-            </button>
+              <p>{item.name}</p>
+              <p>{item.price}</p>
+              <button data-toggle="modal" data-target="#modelId" className='btn btn-success' onClick={()=>{
+                this.props.xemChiTiet(item);
+              }}>Xem chi tiết</button>
           </div>
-        </div>
       </div>
-    );
+    )
   }
 }

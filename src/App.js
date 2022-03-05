@@ -1,31 +1,37 @@
-// import DataBinding from "./DataBinding/DataBinding";
-import React from 'react';
-// import BaiTapChonXeRedux from './DemoRedux/BaiTapChonXeRedux/BaiTapChonXeRedux';
-import XemChiTietSanPhamRedux from './DemoRedux/XemChiTietSanPhamRedux/XemChiTietSanPhamRedux';
-// import DemoPropsChildrent from './Props/DemoPropsChildrent/DemoPropsChildrent';
-// import ExerciseCarStore from './Props/ExerciseCarStore/ExerciseCarStore';
+// import HandleEventRCC from "./EventHandler/HandleEventRCC";
 
-// import BaiTapTangGiamFrontSize from './BaiTapTangGiamFrontSize/BaiTapTangGiamFrontSize';
-// import BaiTapQLSP from './Props/BaiTapQLSP/BaiTapQLSP';
-// import BaiTapXemChiTiet from './Props/BaiTapXemChiTiet/BaiTapXemChiTiet';
-// import DemoProps from './Props/DemoProps/DemoProps';
-// import RenderWithMap from './RenderWithMap/RenderWithMap';
-// import ChangeColor from './ChangeColor/ChangeColor';
+import BaiTapChonXeRedux from "./DemoRedux/BaiTapChonXeRedux/BaiTapChonXeRedux";
+import BaiTapGameXucXac from "./DemoRedux/BaiTapGameXucXac/BaiTapGameXucXac";
+import BaiTapQLSP from "./Props/BaiTapQLSP/BaiTapQLSP";
+import BaiTapXemChiTiet from "./Props/BaiTapXemChiTiet/BaiTapXemChiTiet";
+import DemoProps from "./Props/DemoProps/DemoProps";
+import DemoPropsChildren from "./Props/DemoPropsChildren/DemoPropsChildren";
+import ExerciseCarStore from "./Props/ExerciseCarStore/ExerciseCarStore";
+import RenderWithMap from "./RenderWithMap/RenderWithMap";
+
+// import BaiTapChonXe from "./StateDemo/BaiTapChonXe/BaiTapChonXe";
+// import BaiTapTangGiamFont from "./StateDemo/BaiTapTangGiamFont/BaiTapTangGiamFont";
+// import StyleComponent from "./StyleComponent/StyleComponent";
+
+// import LoginForm from "./EventHandler/LoginForm";
 
 function App() {
   return (
-    <div className='App'>
-      {/* <DataBinding /> */}
-      {/* <ChangeColor /> */}
-      {/* <BaiTapTangGiamFrontSize /> */}
+    <div className="App">
+      {/* <HandleEventRCC /> */}
+      {/* <LoginForm /> */}
+      {/* <StyleComponent /> */}
+      {/* <p className='pColorGreen'>hello cyberosft</p> */}
+      {/* <BaiTapChonXe /> */}
+      {/* <BaiTapTangGiamFont /> */}
       {/* <RenderWithMap /> */}
       {/* <DemoProps /> */}
       {/* <BaiTapQLSP /> */}
       {/* <BaiTapXemChiTiet /> */}
       {/* <ExerciseCarStore /> */}
-      {/* <DemoPropsChildrent /> */}
-      <XemChiTietSanPhamRedux />
+      {/* <DemoPropsChildren /> */}
       {/* <BaiTapChonXeRedux /> */}
+      <BaiTapGameXucXac />
     </div>
   );
 }

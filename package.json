@@ -1,5 +1,5 @@
 {
-  "name": "react-research",
+  "name": "reactfe70",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "5.0.0",
     "redux": "^4.1.2",
     "web-vitals": "^2.1.4"
   },
