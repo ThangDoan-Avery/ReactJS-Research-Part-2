@@ -1,13 +1,14 @@
 // import HandleEventRCC from "./EventHandler/HandleEventRCC";
 
-import BaiTapChonXeRedux from "./DemoRedux/BaiTapChonXeRedux/BaiTapChonXeRedux";
-import BaiTapGameXucXac from "./DemoRedux/BaiTapGameXucXac/BaiTapGameXucXac";
-import BaiTapQLSP from "./Props/BaiTapQLSP/BaiTapQLSP";
-import BaiTapXemChiTiet from "./Props/BaiTapXemChiTiet/BaiTapXemChiTiet";
-import DemoProps from "./Props/DemoProps/DemoProps";
-import DemoPropsChildren from "./Props/DemoPropsChildren/DemoPropsChildren";
-import ExerciseCarStore from "./Props/ExerciseCarStore/ExerciseCarStore";
-import RenderWithMap from "./RenderWithMap/RenderWithMap";
+import BaiTapChonXeRedux from './DemoRedux/BaiTapChonXeRedux/BaiTapChonXeRedux';
+import BaiTapGameXucXac from './DemoRedux/BaiTapGameXucXac/BaiTapGameXucXac';
+import BaiTapQuanLyNguoiDung from './DemoRedux/BaiTapQuanLyNguoiDung/BaiTapQuanLyNguoiDung';
+import BaiTapQLSP from './Props/BaiTapQLSP/BaiTapQLSP';
+import BaiTapXemChiTiet from './Props/BaiTapXemChiTiet/BaiTapXemChiTiet';
+import DemoProps from './Props/DemoProps/DemoProps';
+import DemoPropsChildren from './Props/DemoPropsChildren/DemoPropsChildren';
+import ExerciseCarStore from './Props/ExerciseCarStore/ExerciseCarStore';
+import RenderWithMap from './RenderWithMap/RenderWithMap';
 
 // import BaiTapChonXe from "./StateDemo/BaiTapChonXe/BaiTapChonXe";
 // import BaiTapTangGiamFont from "./StateDemo/BaiTapTangGiamFont/BaiTapTangGiamFont";
@@ -17,7 +18,7 @@ import RenderWithMap from "./RenderWithMap/RenderWithMap";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       {/* <HandleEventRCC /> */}
       {/* <LoginForm /> */}
       {/* <StyleComponent /> */}
@@ -31,7 +32,8 @@ function App() {
       {/* <ExerciseCarStore /> */}
       {/* <DemoPropsChildren /> */}
       {/* <BaiTapChonXeRedux /> */}
-      <BaiTapGameXucXac />
+      {/* <BaiTapGameXucXac /> */}
+      {<BaiTapQuanLyNguoiDung />}
     </div>
   );
 }
