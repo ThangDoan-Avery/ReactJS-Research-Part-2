@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 class FormDangKy extends Component {
   state = {
@@ -89,9 +90,36 @@ class FormDangKy extends Component {
     // Gửi dữ liệu lên reducer
     this.props.dispatch(action);
   };
+
+  // Hàm này đang được gọi bởi handleChange(setState)
+  // Hàm này được gọi khi bấm nút sửa (newProps)
+  // Làm sao biết được khi nào bấm chỉnh sửa thì cần setState
+  // Khi nào không bấm chỉnh sửa mà change Input
+  // static getDeriverdStateFromProps(newProps, currentState) {
+  //   // Nhận vào props mới trước khi render và state hiện tại
+  //   // Hàm này sẽ chạy trước khi giao diện thay đổi (nhận vào props mới và state hiện tại )
+  //   // Lấy props từ redux gán vào state của component
+  //   if (newProps.nguoiDungSua.taiKhoan !== currentState.values.taiKhoan) {
+  //     currentState = {
+  //       ...currentState,
+  //       values: newProps.nguoiDungSua,
+  //     };
+  //   }
+  //   return currentState;
+  // }
+
+  // Hàm này chỉ chạy khi props thay đổi
+  componentWillReceiveProps(newProps) {
+    // Trước khi render và sau khi props thay đổi thì gán props vào state
+    console.log(newProps);
+    this.setState({
+      values: newProps.nguoiDungSua,
+    });
+  }
+  // nó yêu cầu nhập tay chứ không cho chọn như vậy ạ. nếu chọn nhập như vậy sẽ có lỗi đó nhưng nhập tay thì vẫn ok ạ
   render() {
     let { taiKhoan, hoTen, soDienThoai, email, matKhau, loaiNguoiDung } =
-      this.props.nguoiDungSua;
+      this.state.values;
     return (
       <form className='card' onSubmit={this.handleSubmit}>
         <div className='card-header'>
@@ -155,7 +183,7 @@ class FormDangKy extends Component {
             <div className='form-ground'>
               <p>Loại người dùng</p>
               <select
-                id='loaiNguoiDung'
+                name='loaiNguoiDung'
                 className='form-control'
                 onChange={this.handleChangeInput}
                 value={loaiNguoiDung}
@@ -170,7 +198,17 @@ class FormDangKy extends Component {
           <button type='submit' className='btn btn-outline-success'>
             Đăng ký
           </button>
-          <button type='button' className='btn btn-outline-primary ml-2'>
+          <button
+            type='button'
+            className='btn btn-outline-primary ml-2'
+            onClick={() => {
+              const action = {
+                type: 'CAP_NHAT_NGUOI_DUNG',
+                nguoiDungCapNhat: this.state.values,
+              };
+              this.props.dispatch(action);
+            }}
+          >
             Cập nhật
           </button>
         </div>

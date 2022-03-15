@@ -1,9 +1,9 @@
 import { combineReducers, createStore } from 'redux';
-import { baiTapGameXucXacReducer } from './baiTapGameXucXacReducer';
-import { baiTapQuanLyNguoiDungReducer } from './baiTapQuanLyNguoiDungReducer';
-import { carDetailReducer } from './carDetailReducer';
-import { gioHangReducer } from './gioHangReducer';
-import { productDetailReducer } from './productDetailReducer';
+import { baiTapGameXucXacReducer } from './Reducers/baiTapGameXucXacReducer';
+import { baiTapQuanLyNguoiDungReducer } from './Reducers/baiTapQuanLyNguoiDungReducer';
+import { carDetailReducer } from './Reducers/carDetailReducer';
+import { gioHangReducer } from './Reducers/gioHangReducer';
+import { productDetailReducer } from './Reducers/productDetailReducer';
 
 const rootReducer = combineReducers({
   //Nơi chứa các state của ứng dụng
