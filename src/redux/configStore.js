@@ -2,6 +2,7 @@ import { combineReducers, createStore } from 'redux';
 import { baiTapGameXucXacReducer } from './Reducers/baiTapGameXucXacReducer';
 import { baiTapQuanLyNguoiDungReducer } from './Reducers/baiTapQuanLyNguoiDungReducer';
 import { carDetailReducer } from './Reducers/carDetailReducer';
+import { FakeBookAppReducer } from './Reducers/FakeBookAppReducer';
 import { gioHangReducer } from './Reducers/gioHangReducer';
 import { productDetailReducer } from './Reducers/productDetailReducer';
 
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   gioHangReducer,
   baiTapGameXucXacReducer,
   baiTapQuanLyNguoiDungReducer,
+  FakeBookAppReducer,
 });
 
 export const store = createStore(

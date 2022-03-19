@@ -85,6 +85,21 @@ export default class HeaderHome extends Component {
                 <NavLink className='dropdown-item' to='/hookusestate'>
                   UseState
                 </NavLink>
+                <NavLink className='dropdown-item' to='/hookuseeffect'>
+                  UseEffect
+                </NavLink>
+                <NavLink className='dropdown-item' to='/hookusecallback'>
+                  UseCallBack
+                </NavLink>
+                <NavLink className='dropdown-item' to='/hookusememo'>
+                  UseMemo
+                </NavLink>
+                <NavLink className='dropdown-item' to='/hookuseref'>
+                  UseRef
+                </NavLink>
+                <NavLink className='dropdown-item' to='/hookredux'>
+                  HookRedux
+                </NavLink>
               </div>
             </li>
           </ul>
