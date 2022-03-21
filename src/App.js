@@ -30,6 +30,8 @@ import ParentComponent from './pages/HookReact/HookUseCallBack/ParentComponent';
 import HookUseMemo from './pages/HookReact/HookUseMemo/HookUseMemo';
 import HookUseRef from './pages/HookReact/HookUseRef/HookUseRef';
 import HookRedux from './pages/HookReact/HookRedux/HookRedux';
+import ToDoList from './pages/HookReact/ToDoList/ToDoList';
+import DemoHOCModal from './pages/HOC/DemoHOCModal/DemoHOCModal';
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
         <Route exact path={'/hookusememo'} component={HookUseMemo} />
         <Route exact path={'/hookuseref'} component={HookUseRef} />
         <Route exact path={'/hookredux'} component={HookRedux} />
+        <Route exact path={'/todolist'} component={ToDoList} />
+        <Route exact path={'/demohocmodal'} component={DemoHOCModal} />
 
         <Route exact path={''} component={Home} />
       </Switch>

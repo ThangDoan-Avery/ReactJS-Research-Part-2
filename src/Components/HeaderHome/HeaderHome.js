@@ -100,7 +100,20 @@ export default class HeaderHome extends Component {
                 <NavLink className='dropdown-item' to='/hookredux'>
                   HookRedux
                 </NavLink>
+                <NavLink className='dropdown-item' to='/todolist'>
+                  To Do List
+                </NavLink>
               </div>
+            </li>
+            <li className='nav-item'>
+              <NavLink
+                exact
+                activeClassName='bg-white text-dark'
+                className='nav-link'
+                to='/demohocmodal'
+              >
+                Demo HOC Modal
+              </NavLink>
             </li>
           </ul>
           <form className='form-inline my-2 my-lg-0'>
